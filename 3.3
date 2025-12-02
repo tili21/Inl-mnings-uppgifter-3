@@ -1,0 +1,22 @@
+using System;
+
+namespace Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hur många timmar vill du hyra bilen?");
+            int timmar = int.Parse(Console.ReadLine());
+
+            int pris = timmar * 80;
+
+            if (pris > 950)
+            {
+                pris = 950;
+            }
+
+            Console.WriteLine("Det kostar " + pris + " kronor.");
+        }
+    }
+}
